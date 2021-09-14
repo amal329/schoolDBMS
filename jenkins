@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+    stages{
+        stage("compile"){
+            steps{
+                bat "cd firstRestService" //whole path
+                bat "mvn compile"
+            }
+        }
+        stage("testPhase"){
+            steps{
+                bat "cd firstRestService" //whole path
+                bat "mvn test"
+                }
+        }
+        stage("packagingPhase"){
+            steps{
+                bat "cd firstRestService" //whole path
+                bat "mvn clean package"
+            }
+        }
+    }
+}
