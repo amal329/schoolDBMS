@@ -73,16 +73,16 @@ class FirstRestServiceApplicationTests {
 		}
 	}
 
-	@Test
-	public void testController2(){
-		try{
-			Optional<StudentDTO> s = controller.getAnyStudent("101");
-			assertNotNull(s);
-		}
-		catch(Exception e){
-			fail();
-		}
-	}
+//	@Test
+//	public void testController2(){
+//		try{
+//			Optional<StudentDTO> s = controller.getAnyStudent("101");
+//			assertNotNull(s);
+//		}
+//		catch(Exception e){
+//			fail();
+//		}
+//	}
 
 	@Test
 	public void testController4(){
@@ -102,16 +102,16 @@ class FirstRestServiceApplicationTests {
 		}
 	}
 
-	@Test
-	public void testController5(){
-		try{
-			Optional<StudentDTO> s = controller.getAnyStudent("5500");
-			assertEquals(s.isPresent(),false);
-		}
-		catch(Exception e){
-			fail();
-		}
-	}
+//	@Test
+//	public void testController5(){
+//		try{
+//			Optional<StudentDTO> s = controller.getAnyStudent("5500");
+//			assertEquals(s.isPresent(),false);
+//		}
+//		catch(Exception e){
+//			fail();
+//		}
+//	}
 
 	@Test
 	public void testController6(){
